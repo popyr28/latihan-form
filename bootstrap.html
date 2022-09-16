@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style-bootstrap.css">
+    </head>
+    <body>
+        <main class="w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+            <form class="col-4 card p-5 shadow" action="" style="width: 50%;">
+                <h1 class="mb-4">Data Penting</h1>
+                <div class="flex">
+                    <div class="name">
+                        <label for="fullname">Nama Lengkap</label>
+                        <input
+                            type="text"
+                            class="form-control mb-2"
+                            placeholder="Masukkan nama lengkap"
+                            name="fullname"
+                            id="fullname"
+                            maxlength="100">
+                    </div>
+                    <div class="date">
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input
+                            type="date"
+                            class="form-control mb-2"
+                            name="birthdate"
+                            id="birthdate">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="id">
+                        <label for="id">ID Manusia</label>
+                        <input
+                            type="number"
+                            class="form-control mb-2"
+                            placeholder="Masukkan ID kamu"
+                            name="id"
+                            id="id">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input
+                            type="text"
+                            class="form-control mb-2"
+                            placeholder="Masukkan email"
+                            name="email"
+                            id="email">
+                    </div>
+                    <div class="telepon">
+                        <label for="telepon">Telepon</label>
+                        <input
+                            type="tel"
+                            class="form-control mb-2"
+                            placeholder="08xx-xxxx-xxxx"
+                            name="telepon"
+                            id="telepon"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="color">
+                        <label for="favColor" class="form-label">Warna Favorit</label>
+                        <input
+                            type="color"
+                            class="form-control form-control-color mb-3"
+                            id="favColor"
+                            value="#563d7c"
+                            title="Pilih warna favoritmu">
+                    </div>
+                    <div class="dropdown-opsi">
+                        <label for="input" class="form-label">Tipe kamu</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Pilih satu">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="username">
+                        <label for="username">Username</label>
+                        <div class="input-group flex-nowrap mb-3">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Username"
+                                aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            class="form-control mb-2"
+                            name="password"
+                            id="password"
+                            placeholder="Buatlah password">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="search">
+                        <label for="exampleDataList" class="form-label">Kota</label>
+                        <input
+                            class="form-control mb-2"
+                            list="datalistOptions"
+                            id="exampleDataList"
+                            placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago"></datalist>
+                    </div>
+                    <div class="range">
+                        <label for="customRange1" class="form-label">Kamu orang yang mudah akrab</label>
+                        <input type="range" class="form-range" min="0" max="10" id="customRange1">
+                    </div>
+                </div>
+                <button class="btn btn-primary col-4 w-100">Submit</button>
+            </form>
+        </main>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
