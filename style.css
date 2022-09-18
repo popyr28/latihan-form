@@ -3,6 +3,11 @@ body{
     background-image: url("https://infopmb.itpln.ac.id/wp-content/uploads/2020/11/teknik-infor-gambar-1.jpg");
 }
 
+*{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 h1{
     text-align: center;
 }
@@ -54,4 +59,14 @@ h1{
 
 .range{
     width: 45%;
+}
+
+@media(max-width: 1000px){
+    .flex{
+        display: inline;
+    }
+    .name, .date, .color, .dropdown-opsi, .email, .id, .password, .range, .search, .username, .telepon{
+        width: 100%;
+        height: auto;
+    }
 }
