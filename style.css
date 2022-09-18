@@ -4,12 +4,12 @@ body{
 }
 
 *{
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
 h1{
     text-align: center;
+    overflow-y: hidden;
 }
 
 .flex{
